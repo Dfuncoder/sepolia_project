@@ -1,0 +1,22 @@
+{
+  "name": "simple-evm-hackathon-sepolia",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "npx hardhat test",
+    "node": "npx hardhat node",
+    "deploy:sepolia": "npx hardhat run --network sepolia scripts/deploy.js",
+    "deploy:localhost": "npx hardhat run --network localhost scripts/deploy.js",
+    "start:frontend": "cd frontend && npm run dev",
+    "compile": "npx hardhat compile"
+  },
+  "devDependencies": {
+    "hardhat": "^2.22.3",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@openzeppelin/contracts": "^5.1.0",
+    "dotenv": "^16.4.5"
+  },
+  "dependencies": {
+    "ethers": "^6.11.1"
+  }
+}
